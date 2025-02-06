@@ -1,0 +1,23 @@
+{
+  "name": "mongoose-schemas",
+  "version": "1.0.0",
+  "description": "Share mongoose schema in different projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chhayaa/mongoose-schemas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chhayaa/mongoose-schemas/issues"
+  },
+  "homepage": "https://github.com/chhayaa/mongoose-schemas#readme",
+  "dependencies": {
+    "mongoose": "^8.10.0"
+  }
+}
