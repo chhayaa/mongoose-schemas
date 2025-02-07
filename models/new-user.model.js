@@ -488,7 +488,7 @@ const user = new Schema(
   { timestamps: true }
 )
 
-newUser.index({ personalDetails: 1 })
+user.index({ personalDetails: 1 })
 
 const Users = mongoose.model('user', user)
 
