@@ -33,7 +33,7 @@ const marriageDetailsSchema = new Schema({
   },
 });
 
-const newUser = new Schema(
+const user = new Schema(
   {
     cognitousername: {
       type: String,
@@ -490,6 +490,6 @@ const newUser = new Schema(
 
 newUser.index({ personalDetails: 1 })
 
-const Users = mongoose.model('newUser', newUser)
+const Users = mongoose.model('user', user)
 
 module.exports = Users
