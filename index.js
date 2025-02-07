@@ -1,4 +1,4 @@
-const newUserModel = require('./models/newUserSchema');
+const newUserModel = require('./models/new-user.model');
 
 module.exports = {
   newUserModel
