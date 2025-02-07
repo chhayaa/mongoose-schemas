@@ -3,9 +3,9 @@ const Schema = mongoose.Schema
 
 // Define the Marriage Details as a separate schema to use it as an array of objects
 const marriageDetailsSchema = new Schema({
-  spouseId: { // This is the new field to reference the newUser model (the spouse)
+  spouseId: { // This is the new field to reference the user model (the spouse)
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'newUser', // This assumes your user model is named 'newUser'
+    ref: 'user', // This assumes your user model is named 'newUser'
     //default: null
   },
   maidenName: {
@@ -478,11 +478,11 @@ const user = new Schema(
     },
 
     treeIdin: [{ type: mongoose.Schema.Types.ObjectId, ref: 'newtree' }],
-    parents: [{ type: mongoose.Schema.Types.ObjectId, ref: 'newUser' }],
-    children: [{ type: mongoose.Schema.Types.ObjectId, ref: 'newUser' }],
-    husbands: [{ type: mongoose.Schema.Types.ObjectId, ref: 'newUser' }],
-    wifes: [{ type: mongoose.Schema.Types.ObjectId, ref: 'newUser' }],
-    siblings: [{ type: mongoose.Schema.Types.ObjectId, ref: 'newUser' }],
+    parents: [{ type: mongoose.Schema.Types.ObjectId, ref: 'user' }],
+    children: [{ type: mongoose.Schema.Types.ObjectId, ref: 'user' }],
+    husbands: [{ type: mongoose.Schema.Types.ObjectId, ref: 'user' }],
+    wifes: [{ type: mongoose.Schema.Types.ObjectId, ref: 'user' }],
+    siblings: [{ type: mongoose.Schema.Types.ObjectId, ref: 'user' }],
     linkedGroup: [{ type: mongoose.Schema.Types.ObjectId, ref: 'group' }]
   },
   { timestamps: true }
