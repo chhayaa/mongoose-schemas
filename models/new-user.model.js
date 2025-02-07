@@ -490,6 +490,6 @@ const newUser = new Schema(
 
 newUser.index({ personalDetails: 1 })
 
-const newUsers = mongoose.model('newUser', newUser)
+const Users = mongoose.model('newUser', newUser)
 
-module.exports = newUsers
+module.exports = Users
