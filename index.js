@@ -1,4 +1,4 @@
-const newUserModel = require('./models/new-user.model');
+//const newUserModel = require('./models/new-accnt.model');
 const demoModel = require('./models/demo.model');
 const mongoose = require('mongoose');
 
