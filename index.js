@@ -1,4 +1,5 @@
 const newUserModel = require('./models/new-user.model');
+const demoModel = require('./models/demo.model');
 const mongoose = require('mongoose');
 
 
@@ -14,5 +15,5 @@ const mongoose = require('mongoose');
 // };
 
 module.exports = {
-  newUserModel
+  newUserModel,demoModel
 };
