@@ -67,6 +67,15 @@ const demo = new demoModel({
 await demo.save();
 ```
 
+
+## Model Registration
+
+```javascript
+const newUsers = mongoose.models.newUser || mongoose.model('newUser', newUser) [[1]]
+// (https://arunangshudas.medium.com/understanding-documents-objects-and-collections-in-mongoose-39a57a4e8a40)
+
+
+
 ### Models
 
 #### New User Model
