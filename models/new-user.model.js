@@ -591,7 +591,7 @@ default:false
 
 newUser.index({ personalDetails: 1 })
 
-const newUsers =mongoose.models.Users || mongoose.model('newUser', newUser)
+const newUsers =mongoose.models.newUser || mongoose.model('newUser', newUser)
 
 newUsers.usersAtlasSearchStage = async (body) => {
   const searchQuery = _.trim(body?.name)
