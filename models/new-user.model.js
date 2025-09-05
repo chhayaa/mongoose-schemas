@@ -9,6 +9,10 @@ const marriageDetailsSchema = new Schema({
     ref: 'newUser', // This assumes your user model is named 'newUser'
     //default: null
   },
+  testField: {
+    type: String
+    //default: null
+  },
   maidenName: {
     type: String
     //default: null
